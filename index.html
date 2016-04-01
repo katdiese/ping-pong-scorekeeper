@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="pingPongApp">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-cloak ng-controller="pongController">
+  <h1>Ping Pong Score Keeper</h1>
+  <div class="player" ng-click="addOnetoOne()">
+    <h1>Player 1</h1>
+    <p class="score">{{ playerOneScore }}</p>
+  </div>
+  <div class="player" ng-click="addOnetoTwo()">
+    <h1>Player 2</h1>
+    <p class="score">{{ playerTwoScore }}</p>
+  </div>
+  <button class="reset" ng-click="reset()">Reset</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
