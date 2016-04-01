@@ -9,6 +9,7 @@ app.controller("pongController", function($scope) {
   $scope.twoLose = false;
   $scope.oneServe = true;
   $scope.twoServe = false;
+  $scope.currentServe = 0;
   $scope.addOnetoOne = function() {
     $scope.playerOneScore ++;
   }
@@ -32,7 +33,6 @@ app.controller("pongController", function($scope) {
       $scope.oneLose = true;
     }
   }
-  $scope.currentServe = 0;
   $scope.serveTracker = function() {
     $scope.currentServe++;
     if($scope.currentServe == 2) {
