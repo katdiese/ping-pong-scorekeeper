@@ -5,22 +5,42 @@ body {
   width: 80%;
   margin: auto;
   text-align: center;
+  font-family: sans-serif;
 }
 
 .player {
-  width: 45%;
-  margin: 2%;
+  width: 47%;
   float: left;
   height: 50vh;
   border-radius: 10px;
   background: blue;
+  margin-bottom: 10vh;
+}
+.one {
+  margin-right: 3%;
+}
+.two {
+  margin-left: 3%;
 }
 
 .score {
   font-size: 10rem;
-  margin-top: 0;
+  margin: 0;
 }
 
 .reset {
-  padding: 2rem;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.serve {
+  color: white;
+}
+
+.win {
+  background-color: green;
+}
+
+.lose {
+  background-color: red;
 }
