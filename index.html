@@ -6,13 +6,15 @@
 </head>
 <body ng-cloak ng-controller="pongController">
   <h1>Ping Pong Score Keeper</h1>
-  <div class="player" ng-click="addOnetoOne()">
+  <div class="player one" ng-class="{win: oneWins, lose: oneLose}" ng-click="addOnetoOne(); winner(); serveTracker()">
     <h1>Player 1</h1>
     <p class="score">{{ playerOneScore }}</p>
+    <p ng-show="oneServe" class="serve">Serving</p>
   </div>
-  <div class="player" ng-click="addOnetoTwo()">
+  <div class="player two" ng-class="{win: twoWins, lose: twoLose}" ng-click="addOnetoTwo(); winner(); serveTracker()">
     <h1>Player 2</h1>
     <p class="score">{{ playerTwoScore }}</p>
+    <p ng-show="twoServe" class="serve">Serving</p>
   </div>
   <button class="reset" ng-click="reset()">Reset</button>
 
