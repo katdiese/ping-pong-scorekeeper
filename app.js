@@ -19,6 +19,9 @@ app.controller("pongController", function($scope) {
   $scope.reset = function() {
     $scope.playerOneScore = 0;
     $scope.playerTwoScore = 0;
+    $scope.currentServe = 0;
+    $scope.oneServe = true;
+    $scope.twoServe = false;
     $scope.oneWins = false;
     $scope.twoWins = false;
     $scope.oneLose = false;
