@@ -1,0 +1,26 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+body {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.player {
+  width: 45%;
+  margin: 2%;
+  float: left;
+  height: 50vh;
+  border-radius: 10px;
+  background: blue;
+}
+
+.score {
+  font-size: 10rem;
+  margin-top: 0;
+}
+
+.reset {
+  padding: 2rem;
+}
